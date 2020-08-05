@@ -33,6 +33,19 @@ body {
   cursor: pointer;
 }
 
+.content__header-search--title {
+  border: 1px solid green;
+  font-size: 2.8rem;
+  font-weight: 900;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.content__header-search--input {
+  border: 2px solid green;
+}
+
 .container {
   border: 2px solid blueviolet;
   background: #ffffff;
@@ -101,6 +114,50 @@ body {
 .content__header {
   height: 2.5em;
   background: violet;
+}
+
+.content__header-search {
+  border: 2px solid black;
+  height: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__header-search--input {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__header-search--input input {
+  width: 20rem;
+  height: 3.5rem;
+  margin-right: 2.3rem;
+}
+
+.content__header-search--input button {
+  width: 17rem;
+  height: 3.5rem;
+  color: #ffffff;
+  background: #4e4c4c;
+  border: none;
+  border-radius: 2px;
+}
+
+.content__header-filter {
+  height: 2rem;
+  border: 2px solid yellow;
 }
 
 .content__dataview {

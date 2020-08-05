@@ -55,9 +55,40 @@
         height: 2.5em;
         background: violet;
 
-        &-search {}
+        &-search {
+            border: 2px solid black;
+            height: 9rem;
+            display: flex;
+            justify-content: space-between;
 
-        &-filter {}
+            &--input {
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                input {
+                    width: 20rem;
+                    height: 3.5rem;
+                    margin-right: 2.3rem;
+                    
+                }
+
+                button {
+                    width:17rem;
+                    height: 3.5rem;
+                    color: $color-white;
+                    background: $color-grey-dark;
+                    border: none;
+                    border-radius: 2px;
+                }
+            }
+        }
+
+        &-filter {
+            height: 2rem;
+            border: 2px solid yellow;
+        }
     }
 
     &__dataview {
