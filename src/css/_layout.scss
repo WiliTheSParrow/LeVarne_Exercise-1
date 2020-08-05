@@ -1,28 +1,48 @@
-.container{
+.container {
     border: 2px solid blueviolet;
     background: $color-white;
     max-width: 150rem;
     margin: 1.5rem 1.5rem;
     min-height: 50rem;
 }
+
 .header {
     height: 8rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     background: $color-grey-dark;
     color: $color-white;
+    border-bottom: .5rem solid $color-red;
 
     display: flex;
     justify-content: space-between;
 
-    &__menubar{
-        background: orange;
+    &__menu {
         margin-left: 10rem;
-        
-        
+
+        &-bar {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+            }
+
+            .active {
+                color: $color-white;
+            }
+        }
     }
 
-    &__user{
-        background: purple;
+    &__user {
+        background: $color-red;
+        width: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

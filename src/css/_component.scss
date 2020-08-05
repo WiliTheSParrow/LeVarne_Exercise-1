@@ -1,17 +1,11 @@
 .header {
-    &__menubar {
-        & ul {
-            border: 1px solid green;
-            list-style: none;
+    ///////////////////////////////////////
+    //MENUBAR
+    &__menu {
+        color: $color-medium-2;
 
-            height: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-             
-            & li:not(:last-child) {
-                margin-right: 3rem;
-            }
+        &-bar {
+            list-style: none;
         }
     }
 }
