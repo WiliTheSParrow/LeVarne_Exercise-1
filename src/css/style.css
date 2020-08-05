@@ -29,6 +29,10 @@ body {
   list-style: none;
 }
 
+.header__menu-bar-item {
+  cursor: pointer;
+}
+
 .container {
   border: 2px solid blueviolet;
   background: #ffffff;
@@ -90,7 +94,8 @@ body {
 }
 
 .content {
-  height: 1em;
+  height: 2em;
   background: limegreen;
+  margin: 0 10rem;
 }
 /*# sourceMappingURL=style.css.map */
