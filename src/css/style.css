@@ -1,8 +1,3 @@
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -12,10 +7,34 @@ html {
   box-sizing: inherit;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   background: #e4e4e4;
   color: #010101;
   font-size: 100px;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  border: 2px solid blueviolet;
+  max-width: 148rem;
+  margin: 1.5rem 1.5rem;
+  min-height: 50rem;
+}
+
+.header {
+  height: 100px;
+  background: orangered;
+}
+
+.content {
+  height: 100px;
+  background: limegreen;
 }
 /*# sourceMappingURL=style.css.map */
