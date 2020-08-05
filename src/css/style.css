@@ -13,7 +13,8 @@ html {
 }
 
 body {
-  background: limegreen;
+  background: #e4e4e4;
+  color: #010101;
   font-size: 100px;
   font-family: 'Roboto', sans-serif;
 }
