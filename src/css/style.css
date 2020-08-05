@@ -94,8 +94,17 @@ body {
 }
 
 .content {
-  height: 2em;
-  background: limegreen;
+  border: 2px solid yellowgreen;
   margin: 0 10rem;
+}
+
+.content__header {
+  height: 2.5em;
+  background: violet;
+}
+
+.content__dataview {
+  height: 2.5em;
+  background: blue;
 }
 /*# sourceMappingURL=style.css.map */

@@ -47,7 +47,21 @@
 }
 
 .content {
-    height: 2em;
-    background: limegreen;
+    // height: 5em;
+    border: 2px solid yellowgreen;
     margin: 0 10rem;
+
+    &__header {
+        height: 2.5em;
+        background: violet;
+
+        &-search {}
+
+        &-filter {}
+    }
+
+    &__dataview {
+        height: 2.5em;
+        background: blue;
+    }
 }
