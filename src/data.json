@@ -1,0 +1,102 @@
+[{
+        "first_name": "Aneesa",
+        "second_name": "Braun",
+        "email_address": "aneesa_braun@gmail.com",
+        "phone_number": "06123456789",
+        "rol_type": "X",
+        "order": [{
+                "number": "11111",
+                "status": "accorderen /afkeuren",
+                "event": "KLM Open"
+            },
+            {
+                "number": "22222",
+                "status": "accorderen /afkeuren",
+                "event": "Invictus Games"
+            }
+        ]
+    },
+    {
+        "first_name": "Brenda",
+        "second_name": "Peralta",
+        "email_address": "brenda_peralta@gmail.com",
+        "phone_number": "06123456789",
+        "rol_type": "Y",
+        "order": [{
+                "number": "33333",
+                "status": "Wachten op reactie leverancier Y",
+                "event": "Olympic Festival 2020"
+            },
+            {
+                "number": "44444",
+                "status": "accorderen /afkeuren",
+                "event": "WK Shorttrack 2021"
+            },
+            {
+                "number": "55555",
+                "status": "accorderen /afkeuren",
+                "event": "WK BMX 2021"
+            }
+        ]
+    },
+    {
+        "first_name": "Sheeren",
+        "second_name": "Conelly",
+        "email_address": "sheeren_conelly@gmail.com",
+        "phone_number": "06123456789",
+        "rol_type": "Y",
+        "order": [{
+                "number": "88444",
+                "status": "accorderen /afkeuren",
+                "event": "KLM Open"
+            },
+            {
+                "number": "55674",
+                "status": "Wachten op reactie leverancier Y",
+                "event": "Dutch Grand Prix"
+            }
+        ]
+    },
+    {
+        "first_name": "Eli",
+        "second_name": "Brady",
+        "email_address": "eli_brady@gmail.com",
+        "phone_number": "06123456789",
+        "rol_type": "Y",
+        "order": [{
+                "number": "66666",
+                "status": "Wachten op reactie leverancier Y",
+                "event": "WK Zeilen 2022"
+            },
+            {
+                "number": "77777",
+                "status": "Wachten op toestemming",
+                "event": "WK Volleybal"
+            }
+        ]
+    },
+    {
+        "first_name": "Blanche",
+        "second_name": "Walter",
+        "email_address": "blanche_walter@gmail.com",
+        "phone_number": "06123456789",
+        "rol_type": "Z",
+        "order": []
+    },
+    {
+        "first_name": "Axel",
+        "second_name": "Peterson",
+        "email_address": "axel_peterson@gmail.com",
+        "phone_number": "06123456789",
+        "rol_type": "Z",
+        "order": []
+    },
+    {
+        "first_name": "Kimberly",
+        "second_name": "Downes",
+        "email_address": "kimberly_downes@gmail.com",
+        "phone_number": "06123456789",
+        "rol_type": "Z",
+        "order": []
+    }
+]
