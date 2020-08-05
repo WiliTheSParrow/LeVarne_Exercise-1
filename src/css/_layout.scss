@@ -1,15 +1,32 @@
 .container{
     border: 2px solid blueviolet;
-    max-width: 148rem;
+    background: $color-white;
+    max-width: 150rem;
     margin: 1.5rem 1.5rem;
     min-height: 50rem;
 }
 .header {
-    height: 100px;
-    background: orangered;
+    height: 8rem;
+    font-size: 1.4rem;
+    background: $color-grey-dark;
+    color: $color-white;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__menubar{
+        background: orange;
+        margin-left: 10rem;
+        
+        
+    }
+
+    &__user{
+        background: purple;
+    }
 }
 
 .content {
-    height: 100px;
+    height: 1em;
     background: limegreen;
 }
