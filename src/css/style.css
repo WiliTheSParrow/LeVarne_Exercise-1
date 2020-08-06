@@ -18,6 +18,7 @@ body {
   color: #010101;
   font-size: 100px;
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
   min-height: 100vh;
 }
 
@@ -34,7 +35,6 @@ body {
 }
 
 .content__header-search--title {
-  border: 1px solid green;
   font-size: 2.8rem;
   font-weight: 900;
   -ms-flex-item-align: center;
@@ -42,8 +42,50 @@ body {
       align-self: center;
 }
 
-.content__header-search--input {
-  border: 2px solid green;
+.content__header-search--input input {
+  border: 1.5px solid #e8e8e8;
+  border-radius: 2px;
+  padding-left: 4rem;
+}
+
+.content__header-search--input ::-webkit-input-placeholder {
+  color: #adacac;
+  /* Firefox */
+}
+
+.content__header-search--input :-ms-input-placeholder {
+  color: #adacac;
+  /* Firefox */
+}
+
+.content__header-search--input ::-ms-input-placeholder {
+  color: #adacac;
+  /* Firefox */
+}
+
+.content__header-search--input ::placeholder {
+  color: #adacac;
+  /* Firefox */
+}
+
+.content__header-search--input :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #adacac;
+}
+
+.content__header-search--input ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #adacac;
+}
+
+.content__header-search--input button {
+  cursor: pointer;
+}
+
+.icon__input {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #adacac;
 }
 
 .container {
@@ -107,13 +149,11 @@ body {
 }
 
 .content {
-  border: 2px solid yellowgreen;
   margin: 0 10rem;
 }
 
 .content__header {
   height: 2.5em;
-  background: violet;
 }
 
 .content__header-search {
