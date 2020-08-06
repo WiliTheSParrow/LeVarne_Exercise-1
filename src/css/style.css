@@ -95,6 +95,18 @@ body {
   padding-left: 2.5rem;
 }
 
+.content__header-filter {
+  font-size: 1.4rem;
+}
+
+.content__header-filter-table {
+  list-style: none;
+}
+
+.content__header-filter-table--element {
+  cursor: pointer;
+}
+
 .icon__input {
   position: relative;
   margin-right: -3rem;
@@ -202,8 +214,43 @@ body {
 
 .content__header-filter {
   border: 1.5px solid #e8e8e8;
+  background: #f7f7f7;
   height: 6rem;
   margin-bottom: 3rem;
+  padding: 0 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__header-filter--type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__header-filter-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__header-filter-table--element {
+  margin-left: 3rem;
+  /* &:not(:last-child) {
+                        margin-right: 3rem;
+                    } */
 }
 
 .content__dataview {

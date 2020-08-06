@@ -72,8 +72,31 @@
 
         &-filter {
             border: 1.5px solid $color-grey-medium-1;
+            background: $color-grey-light-2;
             height: 6rem;
             margin-bottom: 3rem;
+            padding: 0 2.5rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--type {
+                display: flex;
+            }
+
+            &-table {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                &--element {
+                    margin-left: 3rem;
+                    /* &:not(:last-child) {
+                        margin-right: 3rem;
+                    } */
+                }
+            }
         }
     }
 

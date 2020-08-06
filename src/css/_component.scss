@@ -16,58 +16,73 @@
 }
 
 .content {
-    &__header-search {
-        &--title {
-            // border: 1px solid green;
-            font-size: 2.8rem;
-            font-weight: 900;
-            align-self: center;
+    &__header {
+        &-search {
+            &--title {
+                // border: 1px solid green;
+                font-size: 2.8rem;
+                font-weight: 900;
+                align-self: center;
 
-        }
+            }
 
-        input {
-            width: 20rem;
-            height: 3.5rem;
-            margin-right: 4.5rem;
-        }
-
-        &--input {
-
-            // border: 2px solid green;
             input {
-                border: 1.5px solid $color-grey-medium-1;
+                width: 20rem;
+                height: 3.5rem;
+                margin-right: 4.5rem;
+            }
+
+            &--input {
+
+                // border: 2px solid green;
+                input {
+                    border: 1.5px solid $color-grey-medium-1;
+                    border-radius: 2px;
+                    padding-left: 4rem;
+                }
+
+                ::placeholder {
+                    color: $color-grey-medium-2;
+                    /* Firefox */
+                }
+
+                :-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: $color-grey-medium-2;
+                }
+
+                ::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: $color-grey-medium-2;
+                }
+
+
+            }
+
+            button {
+                width: 15rem;
+                height: 3.5rem;
+                color: $color-white;
+                background: $color-grey-dark;
+                border: none;
                 border-radius: 2px;
-                padding-left: 4rem;
+                cursor: pointer;
+                padding-left: 2.5rem;
+
             }
-
-            ::placeholder {
-                color: $color-grey-medium-2;
-                /* Firefox */
-            }
-
-            :-ms-input-placeholder {
-                /* Internet Explorer 10-11 */
-                color: $color-grey-medium-2;
-            }
-
-            ::-ms-input-placeholder {
-                /* Microsoft Edge */
-                color: $color-grey-medium-2;
-            }
-
-
         }
 
-        button {
-            width: 15rem;
-            height: 3.5rem;
-            color: $color-white;
-            background: $color-grey-dark;
-            border: none;
-            border-radius: 2px;
-            cursor: pointer;
-            padding-left: 2.5rem;
+        &-filter {
+            font-size: 1.4rem;
 
+            &-table {
+                list-style: none;
+
+                &--element {
+
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
