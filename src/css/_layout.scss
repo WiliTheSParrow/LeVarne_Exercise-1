@@ -52,11 +52,11 @@
     margin: 0 10rem;
 
     &__header {
-        height: 2.5em;
+        // height: 2.5em;
         // background: violet;
 
         &-search {
-            border: 2px solid black;
+            // border: 2px solid black;
             height: 9rem;
             display: flex;
             justify-content: space-between;
@@ -71,8 +71,9 @@
         }
 
         &-filter {
-            height: 2rem;
-            border: 2px solid yellow;
+            border: 1.5px solid $color-grey-medium-1;
+            height: 6rem;
+            margin-bottom: 3rem;
         }
     }
 

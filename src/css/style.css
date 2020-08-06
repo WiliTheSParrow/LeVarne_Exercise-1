@@ -177,12 +177,7 @@ body {
   margin: 0 10rem;
 }
 
-.content__header {
-  height: 2.5em;
-}
-
 .content__header-search {
-  border: 2px solid black;
   height: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,8 +201,9 @@ body {
 }
 
 .content__header-filter {
-  height: 2rem;
-  border: 2px solid yellow;
+  border: 1.5px solid #e8e8e8;
+  height: 6rem;
+  margin-bottom: 3rem;
 }
 
 .content__dataview {
