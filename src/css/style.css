@@ -16,7 +16,6 @@ html {
 body {
   background: #e4e4e4;
   color: #010101;
-  font-size: 100px;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
 }
@@ -35,7 +34,7 @@ body {
 }
 
 .content__header-search--title {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   font-weight: bold;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -97,7 +96,7 @@ body {
 }
 
 .content__header-filter {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .content__header-filter--type p {
@@ -122,6 +121,31 @@ body {
 .content__header-filter-active {
   color: #010101;
   font-weight: bold;
+}
+
+.content__dataview-relaties--table {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.content__dataview-relaties--table,
+.content__dataview-relaties--table th,
+.content__dataview-relaties--table td {
+  border-collapse: collapse;
+}
+
+.content__dataview-relaties--table th,
+.content__dataview-relaties--table td {
+  padding: 1rem 0 1rem 3rem;
+}
+
+.content__dataview-relaties--table tr:not(:last-child) {
+  border-bottom: 1.5px solid #e8e8e8;
+}
+
+.content__dataview-relaties--table th {
+  color: #969696;
+  font-weight: normal;
 }
 
 .icon__input {
@@ -231,9 +255,9 @@ body {
 .content__header-filter {
   border: 1.5px solid #e8e8e8;
   background: #f7f7f7;
-  height: 5.5rem;
+  height: 5rem;
   margin-bottom: 3rem;
-  padding: 0 2.5rem;
+  padding: 0 1.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,13 +293,29 @@ body {
                     } */
 }
 
+.content__dataview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .content__dataview-relaties {
-  background: blue;
-  height: 2.5rem;
+  border: 1.5px solid #e8e8e8;
+  border-right: none;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 6rem;
+}
+
+.content__dataview-relaties--table {
+  width: 100%;
 }
 
 .content__dataview-details {
-  background: orangered;
-  height: 2.5rem;
+  border: 1.5px solid #e8e8e8;
+  height: 10rem;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
