@@ -7,6 +7,7 @@
 
         &-bar {
             list-style: none;
+            font-weight: bold;
 
             &-item {
                 cursor: pointer;
@@ -21,7 +22,7 @@
             &--title {
                 // border: 1px solid green;
                 font-size: 2.8rem;
-                font-weight: 900;
+                font-weight: bold;
                 align-self: center;
 
             }
@@ -64,6 +65,7 @@
                 height: 3.5rem;
                 color: $color-white;
                 background: $color-grey-dark;
+                font-weight: bold;
                 border: none;
                 border-radius: 2px;
                 cursor: pointer;
@@ -75,13 +77,30 @@
         &-filter {
             font-size: 1.4rem;
 
+            &--type {
+                p {
+                    font-weight: bold;
+                }
+            }
+
             &-table {
                 list-style: none;
 
                 &--element {
-
                     cursor: pointer;
+                    color: $color-grey-medium-3;
                 }
+            }
+
+            &--opties {
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            &-active {
+                color: $color-black;
+                font-weight: bold;
             }
         }
     }

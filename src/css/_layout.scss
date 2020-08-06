@@ -1,5 +1,5 @@
 .container {
-    border: 2px solid blueviolet;
+    // border: 2px solid blueviolet;
     background: $color-white;
     max-width: 150rem;
     margin: 1.5rem 1.5rem;
@@ -73,7 +73,7 @@
         &-filter {
             border: 1.5px solid $color-grey-medium-1;
             background: $color-grey-light-2;
-            height: 6rem;
+            height: 5.5rem;
             margin-bottom: 3rem;
             padding: 0 2.5rem;
 
@@ -101,7 +101,16 @@
     }
 
     &__dataview {
-        height: 2.5em;
-        background: blue;
+
+        
+        &-relaties{
+            background: blue;
+            height: 2.5rem;
+        }
+        &-details{
+            background: orangered;
+            height: 2.5rem;
+        }
+
     }
 }
