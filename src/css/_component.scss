@@ -120,6 +120,10 @@
                 th,
                 td {
                     padding: 1rem 0 1rem 3rem;
+
+                    &:first-child {
+                        width: 28%;
+                    }
                 }
 
                 tr {
@@ -132,6 +136,10 @@
                     color: $color-grey-medium-3;
                     font-weight: normal;
                 }
+            }
+
+            &--active {
+                background: $color-grey-medium-1;
             }
         }
 
@@ -212,6 +220,14 @@
                     th {
                         color: $color-grey-medium-3;
                         font-weight: normal;
+                    }
+
+                    .statusprocess {
+                        display: none;
+                        width: 1rem;
+                        height: 1rem;
+                        margin-right: .5rem;
+                        fill: $color-black;
                     }
                 }
             }
