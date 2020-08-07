@@ -142,6 +142,14 @@ body {
   font-weight: normal;
 }
 
+.content__dataview-details--header h2 {
+  font-size: 1.6rem;
+}
+
+.content__dataview-details--contact {
+  padding: 0 3rem;
+}
+
 .content__dataview-details--contact--table {
   width: 100%;
   font-size: 1.2rem;
@@ -156,16 +164,22 @@ body {
 
 .content__dataview-details--contact--table th,
 .content__dataview-details--contact--table td {
-  padding: 1rem 0 1rem 3rem;
+  padding: 1rem 1rem 0 0;
 }
 
-.content__dataview-details--contact--table tr, .content__dataview-details--contact--table th {
-  border: 1.5px solid blue;
+.content__dataview-details--contact--table th:first-child,
+.content__dataview-details--contact--table td:first-child {
+  width: 60%;
 }
 
 .content__dataview-details--contact--table th {
   color: #969696;
   font-weight: normal;
+}
+
+.content__dataview-details--contact--table td {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .icon__input {
@@ -346,7 +360,6 @@ body {
 }
 
 .content__dataview-details--header {
-  background: orangered;
   height: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,7 +374,6 @@ body {
 }
 
 .content__dataview-details--contact {
-  background: yellowgreen;
   height: 8.5rem;
   display: -webkit-box;
   display: -ms-flexbox;

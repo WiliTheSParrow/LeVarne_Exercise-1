@@ -136,9 +136,15 @@
         }
 
         &-details {
-            &--header {}
+            &--header {
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
 
             &--contact {
+                padding: 0 3rem;
+
                 &--table {
                     width: 100%;
                     font-size: 1.2rem;
@@ -148,21 +154,26 @@
                     th,
                     td {
                         border-collapse: collapse;
+                        // border: 1.5px solid blue;
                     }
 
                     th,
                     td {
-                        padding: 1rem 0 1rem 3rem;
-                    }
+                        padding: 1rem 1rem 0 0;
 
-                    tr,th {
-                        border: 1.5px solid blue;
-
+                        &:first-child {
+                            width: 60%;
+                        }
                     }
 
                     th {
                         color: $color-grey-medium-3;
                         font-weight: normal;
+                    }
+
+                    td {
+                        font-size: 1.4rem;
+                        font-weight: bold;
                     }
                 }
             }

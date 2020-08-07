@@ -120,7 +120,7 @@
             width: 100%;
 
             &--header {
-                background: orangered;
+                // background: orangered;
                 height: 8rem;
                 display: flex;
                 justify-content: space-between;
@@ -129,7 +129,7 @@
             }
 
             &--contact {
-                background: yellowgreen;
+                // background: yellowgreen;
                 height: 8.5rem;
                 display: flex;
                 align-items: center;
@@ -141,7 +141,8 @@
             }
 
             &--otherinfo {
-                background: darkgoldenrod;;
+                background: darkgoldenrod;
+                ;
                 height: 6rem;
             }
 
