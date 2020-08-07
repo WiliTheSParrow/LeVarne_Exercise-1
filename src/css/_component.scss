@@ -138,7 +138,7 @@
         &-details {
             &--header {
                 h2 {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                 }
             }
 
@@ -146,7 +146,7 @@
                 padding: 0 3rem;
 
                 &--table {
-                    width: 100%;
+
                     font-size: 1.2rem;
                     text-align: left;
 
@@ -172,21 +172,54 @@
                     }
 
                     td {
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                         font-weight: bold;
                     }
                 }
             }
 
             &--processes {
+                padding: 1rem 3rem;
+
                 &--table {
+
+                    font-size: 1.2rem;
+
                     th,
                     td {
                         text-align: left;
+
                         &:last-child {
                             text-align: right;
                         }
                     }
+
+                    &,
+                    th,
+                    td {
+                        border-collapse: collapse;
+                    }
+
+                    th,
+                    td {
+                        padding: 1rem 0 1rem 0;
+                    }
+
+                    tr {
+                        border-bottom: 1.5px solid $color-grey-medium-1;
+                    }
+
+                    th {
+                        color: $color-grey-medium-3;
+                        font-weight: normal;
+                    }
+                }
+            }
+
+            &--otherinfo {
+                p {
+                    color: $color-grey-medium-3;
+                    font-size: 1.22rem;
                 }
             }
         }

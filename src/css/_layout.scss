@@ -133,20 +133,24 @@
                 height: 8.5rem;
                 display: flex;
                 align-items: center;
+
+                &--table {
+                    width: 100%;
+                }
             }
 
             &--processes {
-                background: blueviolet;
+
+                // background: blueviolet;
                 // height: 6rem;
-                &--table{
+                &--table {
                     width: 100%;
                 }
             }
 
             &--otherinfo {
-                background: darkgoldenrod;
-                ;
-                height: 6rem;
+                // background: darkgoldenrod;
+                padding: 3rem;
             }
 
         }
