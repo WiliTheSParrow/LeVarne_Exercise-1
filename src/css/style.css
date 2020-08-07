@@ -112,12 +112,6 @@ body {
   color: #969696;
 }
 
-.content__header-filter--opties {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .content__header-filter-active {
   color: #010101;
   font-weight: bold;
@@ -148,6 +142,32 @@ body {
   font-weight: normal;
 }
 
+.content__dataview-details--contact--table {
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.content__dataview-details--contact--table,
+.content__dataview-details--contact--table th,
+.content__dataview-details--contact--table td {
+  border-collapse: collapse;
+}
+
+.content__dataview-details--contact--table th,
+.content__dataview-details--contact--table td {
+  padding: 1rem 0 1rem 3rem;
+}
+
+.content__dataview-details--contact--table tr, .content__dataview-details--contact--table th {
+  border: 1.5px solid blue;
+}
+
+.content__dataview-details--contact--table th {
+  color: #969696;
+  font-weight: normal;
+}
+
 .icon__input {
   position: relative;
   margin-right: -3rem;
@@ -164,6 +184,13 @@ body {
   fill: #ffffff;
   stroke: #ffffff;
   stroke-width: 1;
+}
+
+.info-titles {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #969696;
 }
 
 .container {
@@ -315,7 +342,42 @@ body {
 
 .content__dataview-details {
   border: 1.5px solid #e8e8e8;
-  height: 10rem;
   width: 100%;
+}
+
+.content__dataview-details--header {
+  background: orangered;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3rem;
+}
+
+.content__dataview-details--contact {
+  background: yellowgreen;
+  height: 8.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__dataview-details--processes {
+  background: blueviolet;
+  height: 6rem;
+}
+
+.content__dataview-details--otherinfo {
+  background: darkgoldenrod;
+  height: 6rem;
 }
 /*# sourceMappingURL=style.css.map */

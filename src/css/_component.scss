@@ -92,11 +92,7 @@
                 }
             }
 
-            &--opties {
-                font-size: 1rem;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
+            &--opties {}
 
             &-active {
                 color: $color-black;
@@ -104,6 +100,8 @@
             }
         }
     }
+
+
 
     &__dataview {
         &-relaties {
@@ -130,9 +128,42 @@
                     }
                 }
 
-                th{
+                th {
                     color: $color-grey-medium-3;
                     font-weight: normal;
+                }
+            }
+        }
+
+        &-details {
+            &--header {}
+
+            &--contact {
+                &--table {
+                    width: 100%;
+                    font-size: 1.2rem;
+                    text-align: left;
+
+                    &,
+                    th,
+                    td {
+                        border-collapse: collapse;
+                    }
+
+                    th,
+                    td {
+                        padding: 1rem 0 1rem 3rem;
+                    }
+
+                    tr,th {
+                        border: 1.5px solid blue;
+
+                    }
+
+                    th {
+                        color: $color-grey-medium-3;
+                        font-weight: normal;
+                    }
                 }
             }
         }
@@ -161,4 +192,11 @@
         stroke-width: 1;
 
     }
+}
+
+.info-titles {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $color-grey-medium-3;
 }
