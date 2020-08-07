@@ -137,7 +137,10 @@
 
             &--processes {
                 background: blueviolet;
-                height: 6rem;
+                // height: 6rem;
+                &--table{
+                    width: 100%;
+                }
             }
 
             &--otherinfo {

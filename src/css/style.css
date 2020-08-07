@@ -182,6 +182,16 @@ body {
   font-weight: bold;
 }
 
+.content__dataview-details--processes--table th,
+.content__dataview-details--processes--table td {
+  text-align: left;
+}
+
+.content__dataview-details--processes--table th:last-child,
+.content__dataview-details--processes--table td:last-child {
+  text-align: right;
+}
+
 .icon__input {
   position: relative;
   margin-right: -3rem;
@@ -385,7 +395,10 @@ body {
 
 .content__dataview-details--processes {
   background: blueviolet;
-  height: 6rem;
+}
+
+.content__dataview-details--processes--table {
+  width: 100%;
 }
 
 .content__dataview-details--otherinfo {

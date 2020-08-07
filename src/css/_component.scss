@@ -177,8 +177,19 @@
                     }
                 }
             }
-        }
 
+            &--processes {
+                &--table {
+                    th,
+                    td {
+                        text-align: left;
+                        &:last-child {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
