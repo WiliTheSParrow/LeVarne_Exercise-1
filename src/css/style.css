@@ -143,6 +143,10 @@ body {
   width: 28%;
 }
 
+.content__dataview-relaties--table tr {
+  cursor: pointer;
+}
+
 .content__dataview-relaties--table tr:not(:last-child) {
   border-bottom: 1.5px solid #e8e8e8;
 }
@@ -239,6 +243,10 @@ body {
   height: 1rem;
   margin-right: .5rem;
   fill: #010101;
+}
+
+.content__dataview-details--otherinfo {
+  cursor: pointer;
 }
 
 .content__dataview-details--otherinfo p {
@@ -393,9 +401,6 @@ body {
 
 .content__header-filter-table--element {
   margin-left: 3rem;
-  /* &:not(:last-child) {
-                        margin-right: 3rem;
-                    } */
 }
 
 .content__dataview {

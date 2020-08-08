@@ -26,7 +26,6 @@
     &__header {
         &-search {
             &--title {
-                // border: 1px solid green;
                 font-size: 2.7rem;
                 font-weight: bold;
                 align-self: center;
@@ -41,7 +40,6 @@
 
             &--input {
 
-                // border: 2px solid green;
                 input {
                     border: 1.5px solid $color-grey-medium-1;
                     border-radius: 2px;
@@ -136,6 +134,8 @@
                     &:not(:last-child) {
                         border-bottom: 1.5px solid $color-grey-medium-1;
                     }
+
+                    cursor: pointer;
                 }
 
                 th {
@@ -239,6 +239,8 @@
             }
 
             &--otherinfo {
+                cursor: pointer;
+
                 p {
                     color: $color-grey-medium-3;
                     font-size: 1.22rem;
