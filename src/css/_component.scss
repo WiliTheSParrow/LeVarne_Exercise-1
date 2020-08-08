@@ -7,7 +7,7 @@
 .header {
 
     ///////////////////////////////////////
-    //MENUBAR
+    // MENUBAR
     &__menu {
         color: $color-grey-medium-2;
 
@@ -37,6 +37,9 @@
 .content {
     &__header {
         &-search {
+
+            ///////////////////////////////////////
+            // CONTENT - TITLE, INPUT, BUTTON
             &--title {
                 font-size: 2.7rem;
                 font-weight: bold;
@@ -104,6 +107,9 @@
             }
         }
 
+        ///////////////////////////////////////
+        // CONTENT - FILTER OPTIONS
+
         &-filter {
             font-size: 1.3rem;
 
@@ -136,6 +142,9 @@
     }
 
     &__dataview {
+
+        ///////////////////////////////////////
+        // CONTENT DATA - RELATIONS TABLE
         &-relaties {
 
             &--table {
@@ -187,6 +196,9 @@
                 background: $color-grey-medium-1;
             }
         }
+
+        ///////////////////////////////////////
+        // CONTENT DATA - RELATIONS DETAILS PAGE
 
         &-details {
             &--header {
@@ -293,6 +305,9 @@
     }
 }
 
+///////////////////////////////////////
+// ICONS
+
 .icon {
     &__input {
         position: relative;
@@ -312,6 +327,9 @@
         stroke-width: 1;
     }
 }
+
+///////////////////////////////////////
+// SECTION INFO TITLES
 
 .info-titles {
     font-size: 1rem;
