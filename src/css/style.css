@@ -20,6 +20,11 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  -webkit-box-shadow: -1px 2px 5px -5px rgba(0, 0, 0, 0.9);
+  box-shadow: -1px 2px 5px -5px rgba(0, 0, 0, 0.9);
+}
+
 .header__menu {
   color: #adacac;
 }
