@@ -21,8 +21,9 @@
         &-bar {
             height: 100%;
             display: flex;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
             align-items: center;
+            
 
             &-item {
                 &:not(:last-child) {
@@ -30,9 +31,6 @@
                 }
             }
 
-            .active {
-                color: $color-white;
-            }
         }
     }
 

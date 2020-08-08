@@ -17,10 +17,22 @@
 
             &-item {
                 cursor: pointer;
+                transition: all .3s;
+
+                &--active {
+                    color: $color-white;
+                }
+
+                &:hover {
+                    border-bottom: 1px solid $color-white;
+                    color: $color-white;
+                }
             }
         }
     }
 }
+
+
 
 .content {
     &__header {
@@ -42,11 +54,11 @@
                     border: 1.5px solid $color-grey-medium-1;
                     border-radius: 2px;
                     padding-left: 4rem;
-                    transition: all .2s;
+                    transition: all .3s;
 
                     &:focus {
                         outline: none;
-                        width: 50%;
+                        width: 45%;
                         background-color: $color-grey-light-2;
                     }
                 }
@@ -69,7 +81,7 @@
 
             }
 
-            button {
+            &--button {
                 width: 15rem;
                 height: 3.5rem;
                 color: $color-white;
@@ -79,6 +91,15 @@
                 border-radius: 2px;
                 cursor: pointer;
                 padding-left: 2.5rem;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: $color-grey-medium-4;
+                }
+
+                &:focus {
+                    outline: none;
+                }
 
             }
         }
@@ -98,10 +119,14 @@
                 &--element {
                     cursor: pointer;
                     color: $color-grey-medium-3;
+                    transition: all .3s;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: $color-black;
+                    }
                 }
             }
-
-            &--opties {}
 
             &-active {
                 color: $color-black;
@@ -133,17 +158,29 @@
                 }
 
                 tr {
-                    cursor: pointer;
+
+                    transition: all .3s;
+
+                    &:not(:first-child) {
+                        cursor: pointer;
+                    }
 
                     &:not(:last-child) {
                         border-bottom: 1.5px solid $color-grey-medium-1;
                     }
+
+                    &:not(:first-child):hover {
+                        background: $color-grey-medium-1;
+                        ;
+                    }
                 }
 
                 th {
+                    cursor: pointer;
                     color: $color-grey-medium-3;
                     font-weight: normal;
                 }
+
             }
 
             &--active {
@@ -240,11 +277,16 @@
             }
 
             &--otherinfo {
-                cursor: pointer;
-
                 p {
+                    cursor: pointer;
                     color: $color-grey-medium-3;
                     font-size: 1.22rem;
+                    transition: all .2s;
+
+                    &:hover {
+                        color: $color-black;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -276,4 +318,14 @@
     text-transform: uppercase;
     font-weight: bold;
     color: $color-grey-medium-3;
+
+    &--edit {
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            color: $color-black;
+            text-decoration: underline;
+        }
+    }
 }
