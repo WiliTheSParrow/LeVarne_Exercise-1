@@ -46,16 +46,23 @@ body {
       align-self: center;
 }
 
-.content__header-search input {
-  width: 20rem;
+.content__header-search--input input {
+  font-family: inherit;
+  color: inherit;
+  width: 35%;
   height: 3.5rem;
   margin-right: 4.5rem;
-}
-
-.content__header-search--input input {
   border: 1.5px solid #e8e8e8;
   border-radius: 2px;
   padding-left: 4rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.content__header-search--input input:focus {
+  outline: none;
+  width: 50%;
+  background-color: #f7f7f7;
 }
 
 .content__header-search--input ::-webkit-input-placeholder {
