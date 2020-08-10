@@ -86,7 +86,7 @@
                                 <th>Rol</th>
                                 <th>Lopende processen</th>
                             </tr>
-                            <tr v-for="member in allRelationships">
+                            <tr v-for="member in filteredRelationships">
                                 <td>{{member.first_name}} {{member.second_name}}</td>
                                 <td>Rol {{member.rol_type}}</td>
                                 <td>0</td>

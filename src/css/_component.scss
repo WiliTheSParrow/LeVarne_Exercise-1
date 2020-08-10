@@ -49,6 +49,10 @@
                 font-weight: bold;
                 align-self: center;
 
+                @include respond(tab-land) {
+                    align-self: flex-start;;
+                }
+
             }
 
             &--input {
