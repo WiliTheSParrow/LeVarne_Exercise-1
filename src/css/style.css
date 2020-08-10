@@ -70,16 +70,11 @@ body {
 }
 
 .content__header-search--title {
-  border: 2px solid orangered;
   font-size: 2.7rem;
   font-weight: bold;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.content__header-search--input {
-  border: 2px solid blue;
 }
 
 @media only screen and (max-width: 75em) {

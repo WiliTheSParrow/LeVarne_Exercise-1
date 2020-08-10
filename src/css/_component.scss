@@ -45,15 +45,12 @@
             ///////////////////////////////////////
             // CONTENT - TITLE, INPUT, BUTTON
             &--title {
-                border: 2px solid orangered;
                 font-size: 2.7rem;
                 font-weight: bold;
                 align-self: center;
             }
 
             &--input {
-                border: 2px solid blue;
-
                 @include respond(tab-land) {
                     margin-bottom: 1rem;
                 }
