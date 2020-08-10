@@ -13,6 +13,20 @@ var app = new Vue({
         this.getLocalData('./data.json', 'allRelationships');
     },
 
+    computed: {
+        setInputFilter: function () {
+        
+                this.filteredRelationships = this.allRelationships.filter((allrelations) => {
+                    return allrelations.first_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                        allrelations.second_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                        allrelations.email_address.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                        allrelations.phone_number.toLowerCase().match(this.inputSearch.toLowerCase());
+                });
+
+                return this.filteredRelationships;
+        }
+    },
+
     methods: {
         // Fetching data from local json file and error handling.
         getLocalData: function (link, destination) {
@@ -69,20 +83,7 @@ var app = new Vue({
                 })
             });
         }
-    },
-
-    computed: {
-        setInputFilter: function () {
-            /* this.inputSearch == '' ? this.getAllRelationships() : console.log('filtering'); */
-            // this.clearFilteredRelationships();
-            this.clearFilteredRelationships();
-            this.filteredRelationships = this.allRelationships.filter((allrelations) => {
-                return allrelations.first_name.toLowerCase().match(this.inputSearch.toLowerCase()) || 
-                allrelations.second_name.toLowerCase().match(this.inputSearch.toLowerCase());
-            });
-            
-            return this.filteredRelationships;
-
-        }
     }
+
+
 })
