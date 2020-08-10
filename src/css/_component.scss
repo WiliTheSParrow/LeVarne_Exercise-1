@@ -57,6 +57,7 @@
                 @include respond(tab-land) {
                     margin-bottom: 1rem;
                 }
+                
 
                 input {
                     font-family: inherit;
@@ -70,7 +71,7 @@
                     transition: all .3s;
 
                     @include respond(tab-land) {
-                        width: 47%;
+                        position: absolute;
                     }
 
                     &:focus {
@@ -79,7 +80,7 @@
                         background-color: $color-grey-light-2;
 
                         @include respond(tab-land) {
-                            width: 50%;
+                            width: 40%;
                         }
                     }
                 }
@@ -114,6 +115,7 @@
                 cursor: pointer;
                 padding-left: 2.5rem;
                 transition: all .3s;
+
 
                 &:hover {
                     background-color: $color-grey-medium-4;
@@ -342,7 +344,12 @@
         height: 1.5rem;
         fill: $color-grey-medium-2;
 
-        
+        @include respond(tab-land) {
+            margin-left: 1rem;
+            z-index: 2;
+            
+        }
+
     }
 
     &__plus {
@@ -354,8 +361,8 @@
         stroke: $color-white;
         stroke-width: 1;
 
-        @include respond(tab-port) {
-            margin-right: -12rem;
+        @include respond(tab-land) {
+            margin-right: -86%;
         }
     }
 }
@@ -368,6 +375,12 @@
     text-transform: uppercase;
     font-weight: bold;
     color: $color-grey-medium-3;
+
+    &--opties {
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
 
     &--edit {
         cursor: pointer;
