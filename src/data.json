@@ -4,6 +4,7 @@
         "email_address": "aneesa_braun@gmail.com",
         "phone_number": "06123456789",
         "rol_type": "X",
+        "relatie_type": ["TIG", "members"],
         "order": [{
                 "number": "11111",
                 "status": "accorderen /afkeuren",
@@ -22,6 +23,7 @@
         "email_address": "brenda_peralta@gmail.com",
         "phone_number": "06123456789",
         "rol_type": "Y",
+        "relatie_type": ["TIG", "leveranciers"],
         "order": [{
                 "number": "33333",
                 "status": "Wachten op reactie leverancier Y",
@@ -45,6 +47,7 @@
         "email_address": "sheeren_conelly@gmail.com",
         "phone_number": "06123456789",
         "rol_type": "Y",
+        "relatie_type": ["TIG", "partner"],
         "order": [{
                 "number": "88444",
                 "status": "accorderen /afkeuren",
@@ -63,6 +66,7 @@
         "email_address": "eli_brady@gmail.com",
         "phone_number": "06123456789",
         "rol_type": "Y",
+        "relatie_type": ["TIG", "sponsor"],
         "order": [{
                 "number": "66666",
                 "status": "Wachten op reactie leverancier Y",
@@ -81,6 +85,7 @@
         "email_address": "blanche_walter@gmail.com",
         "phone_number": "06123456789",
         "rol_type": "Z",
+        "relatie_type": ["TIG", "members", "sponsor"],
         "order": []
     },
     {
@@ -89,6 +94,7 @@
         "email_address": "axel_peterson@gmail.com",
         "phone_number": "06123456789",
         "rol_type": "Z",
+        "relatie_type":["TIG", "sponsor", "partner"],
         "order": []
     },
     {
@@ -97,6 +103,7 @@
         "email_address": "kimberly_downes@gmail.com",
         "phone_number": "06123456789",
         "rol_type": "Z",
+        "relatie_type":["TIG"],
         "order": []
     }
 ]

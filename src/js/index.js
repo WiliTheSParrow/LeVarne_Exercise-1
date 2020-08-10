@@ -1,10 +1,9 @@
 new Vue({
     el: '#app',
     data: {
-        array: [1, 2, 3, 4],
-        allRelationships: [1, 2, 3, 4],
-        filteredRelationships: []
-
+        allRelationships: [],
+        filteredRelationships: [],
+        relatieType: []
     },
 
     created: function () {
@@ -21,9 +20,10 @@ new Vue({
                 .then(json => {
                     this[destination] = json;
 
-                    /* if (app.filteredRelationships == '') {
+                    if (this.filteredRelationships == '') {
+                        this.collectRelatieType();
                         this.getAllRelationships();
-                    }; */
+                    };
                 })
                 .catch(error => error);
         },
@@ -33,5 +33,21 @@ new Vue({
             this.filteredRelationships = this.allRelationships;
         },
 
+        // Clears the filteredRelationships array.
+        clearFilteredRelationships: function () {
+            this.filteredRelationships = [];
+        },
+
+        collectRelatieType: function () {
+            this.allRelationships.map(el => {
+                el.relatie_type.map(elm =>{
+                    if (!this.relatieType.includes(elm)) {
+                    this.relatieType.push(elm);
+                }} )
+
+            });
+
+            this.relatieType.push('Alle relaties');
+        }
     }
 })

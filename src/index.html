@@ -68,13 +68,10 @@
                     <section class="content__header-filter">
                         <div class="content__header-filter--type">
                             <p>Type relatie:</p>
-                            <ul class="content__header-filter-table">
-                                <li class="content__header-filter-table--element content__header-filter-active">TIG</li>
-                                <li class="content__header-filter-table--element">members</li>
-                                <li class="content__header-filter-table--element">leveranciers</li>
-                                <li class="content__header-filter-table--element">partner</li>
-                                <li class="content__header-filter-table--element">sponsor</li>
-                                <li class="content__header-filter-table--element">Alle relaties</li>
+                            <ul class="content__header-filter-table" v-for="relatie in relatieType">
+                                <li class="content__header-filter-table--element">{{relatie}}</li>
+                               <!--  <li class="content__header-filter-table--element content__header-filter-active">TIG</li>
+                                 -->
                             </ul>
                         </div>
                         <p class="info-titles--opties info-titles">Filter opties</p>
@@ -90,15 +87,10 @@
                                 <th>Lopende processen</th>
                             </tr>
                             <tr v-for="member in allRelationships">
-                                <td>{{member.first_name}}</td>
-                                <td>{{member.rol_type}}</td>
+                                <td>{{member.first_name}} {{member.second_name}}</td>
+                                <td>Rol {{member.rol_type}}</td>
                                 <td>0</td>
                             </tr>
-                            <!-- <tr class="content__dataview-relaties--active">
-                                <td>Someone</td>
-                                <td>Something</td>
-                                <td>2</td>
-                            </tr> -->
 
                         </table>
                     </section>

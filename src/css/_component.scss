@@ -49,7 +49,6 @@
                 font-weight: bold;
                 align-self: center;
 
-                
             }
 
             &--input {
@@ -57,7 +56,6 @@
                     margin-bottom: 1rem;
                 }
                 
-
                 input {
                     font-family: inherit;
                     color: inherit;
@@ -98,9 +96,6 @@
                     /* Microsoft Edge */
                     color: $color-grey-medium-2;
                 }
-
-
-
             }
 
             &--button {
@@ -115,7 +110,6 @@
                 padding-left: 2.5rem;
                 transition: all .3s;
 
-
                 &:hover {
                     background-color: $color-grey-medium-4;
                 }
@@ -123,7 +117,6 @@
                 &:focus {
                     outline: none;
                 }
-
             }
         }
 
