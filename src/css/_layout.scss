@@ -3,6 +3,10 @@
     max-width: 150rem;
     margin: 1.5rem 1.5rem;
     min-height: 50rem;
+
+    @include respond(tab-port){
+        margin: 0;
+    }
 }
 
 .header {
@@ -23,7 +27,7 @@
             display: flex;
             // flex-wrap: wrap;
             align-items: center;
-            
+
             &-item {
                 &:not(:last-child) {
                     margin-right: 3rem;
@@ -45,6 +49,10 @@
 .content {
     margin: 0 10rem;
 
+    @include respond(tab-port){
+        margin: 1.5rem;
+    }
+
     &__header {
 
         &-search {
@@ -52,11 +60,21 @@
             display: flex;
             justify-content: space-between;
 
+            @include respond(tab-land) {
+                flex-direction: column;
+            }
+
             &--input {
                 width: 50%;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
+
+                @include respond(tab-land) {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
             }
         }
 
