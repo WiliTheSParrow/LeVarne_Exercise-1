@@ -1,14 +1,14 @@
 new Vue({
     el: '#app',
     data: {
-        message: 'Hello World!',
-        allRelationships: [],
+        array: [1, 2, 3, 4],
+        allRelationships: [1, 2, 3, 4],
         filteredRelationships: []
+
     },
 
     created: function () {
         this.getLocalData('./data.json', 'allRelationships');
-
     },
 
     methods: {
@@ -19,10 +19,11 @@ new Vue({
                 })
                 .then(response => response.json())
                 .then(json => {
-                    app[destination] = json;
-                    if (app.filteredRelationships == '') {
+                    this[destination] = json;
+
+                    /* if (app.filteredRelationships == '') {
                         this.getAllRelationships();
-                    };
+                    }; */
                 })
                 .catch(error => error);
         },

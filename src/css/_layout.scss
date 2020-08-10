@@ -96,7 +96,7 @@
             justify-content: space-between;
             align-items: center;
 
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 margin-bottom: 1rem;
             }
 
