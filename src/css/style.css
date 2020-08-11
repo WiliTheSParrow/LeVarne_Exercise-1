@@ -339,10 +339,11 @@ body {
 
 .content__dataview-details--processes--table .statusprocess--pending {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  /* width: 1rem;
+                            height: 1rem; */
   margin-right: .5rem;
-  fill: #010101;
+  color: #010101;
+  font-size: .8rem;
 }
 
 .content__dataview-details--otherinfo p {
@@ -360,10 +361,11 @@ body {
 
 .icon__input {
   position: relative;
-  margin-right: -3rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #adacac;
+  margin-right: -2.7rem;
+  /* width: 1.8rem;
+        height: 1.8rem; */
+  color: #adacac;
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -375,12 +377,13 @@ body {
 
 .icon__plus {
   position: relative;
-  margin-right: -3.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #ffffff;
-  stroke: #ffffff;
-  stroke-width: 1;
+  margin-right: -3rem;
+  /* width: 1.5rem;
+        height: 1.5rem; */
+  color: #ffffff;
+  font-size: 1.3rem;
+  /* stroke: $color-white;
+        stroke-width: 1; */
 }
 
 @media only screen and (max-width: 75em) {

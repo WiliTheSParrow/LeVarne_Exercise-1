@@ -308,10 +308,11 @@
 
                         &--pending {
                             display: inline-block;
-                            width: 1rem;
-                            height: 1rem;
+                            /* width: 1rem;
+                            height: 1rem; */
                             margin-right: .5rem;
-                            fill: $color-black;
+                            color: $color-black;
+                            font-size: .8rem;
                         }
                     }
                 }
@@ -340,10 +341,12 @@
 .icon {
     &__input {
         position: relative;
-        margin-right: -3rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: $color-grey-medium-2;
+        margin-right: -2.7rem;
+        /* width: 1.8rem;
+        height: 1.8rem; */
+        color: $color-grey-medium-2;
+        font-size: 1.4rem;
+ 
 
         @include respond(tab-land) {
             margin-left: 1rem;
@@ -354,12 +357,13 @@
 
     &__plus {
         position: relative;
-        margin-right: -3.5rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: $color-white;
-        stroke: $color-white;
-        stroke-width: 1;
+        margin-right: -3rem;
+        /* width: 1.5rem;
+        height: 1.5rem; */
+        color: $color-white;
+        font-size: 1.3rem;
+        /* stroke: $color-white;
+        stroke-width: 1; */
 
         @include respond(tab-land) {
             margin-right: -86%;
