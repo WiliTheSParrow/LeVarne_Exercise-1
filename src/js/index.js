@@ -7,7 +7,8 @@ var app = new Vue({
         activeFilter: 'Alle relaties',
         inputSearch: "",
         activeProfile: '',
-        activePage: true
+        // activePage: 'relaties',
+        currentTableOrder: 'mixed'
 
     },
 
@@ -101,9 +102,36 @@ var app = new Vue({
             return null
         },
 
-        pageActivator: function () {
-            this.activePage ? this.activePage === false : console.log(true);
+        /*  pageActivator: function () {
+
+             this.activePage == 'relaties' ? this.activePage = 'evenementen' : this.activePage == 'relaties';
+
+         } */
+
+        sortDataInTable: function (category) {
+            var orderToUse = '';
+            this.filteredRelationships.sort(
+                function (a, b) {
+                    if (app.currentTableOrder == 'mixed' || app.currentTableOrder == 'descending') {
+                        orderToUse = 'ascending';
+                        if (a[category] < b[category]) {
+                            return -1;
+                        } else {
+                            return 1;
+                        }
+                    } else {
+                        orderToUse = 'descending';
+                        if (a[category] < b[category]) {
+                            return 1;
+                        } else {
+                            return -1;
+                        }
+                    }
+                }
+            );
+            this.currentTableOrder = orderToUse;
         }
+
 
     }
 
