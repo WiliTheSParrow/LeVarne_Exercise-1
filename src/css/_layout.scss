@@ -19,6 +19,12 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(phone) {
+        flex-direction: column-reverse;
+        border-bottom: none;
+        height: auto;
+    }
+
     &__menu {
         margin-left: 10rem;
 
@@ -27,6 +33,11 @@
             width: 50%;
             display: flex;
             justify-content: center;
+        }
+
+        @include respond(phone) {
+            height: 10vh;
+            width: 100%;
         }
 
         &-bar {
@@ -40,6 +51,17 @@
                     margin-right: 3rem;
                 }
             }
+
+            @include respond(phone) {
+                width: 100%;
+                justify-content: center;
+
+                &-item {
+                    &:not(:last-child) {
+                        margin-right: 7rem;
+                    }
+                }
+            }
         }
     }
 
@@ -49,6 +71,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond(phone) {
+            width: 100%;
+            height: 10vh;
+        }
     }
 }
 
@@ -60,6 +87,9 @@
     }
 
     &__header {
+        @include respond(phone) {
+            height: min-content;
+        }
 
         &-search {
             height: 9rem;
@@ -68,6 +98,12 @@
 
             @include respond(tab-land) {
                 flex-direction: column;
+            }
+
+            @include respond(phone) {
+                height: auto;
+                flex-direction: column;
+                margin-bottom: 1rem;
             }
 
             &--input {
@@ -80,6 +116,15 @@
                     width: 100%;
                     flex-wrap: wrap;
                     justify-content: space-between;
+                }
+
+                @include respond(phone) {
+                    height: 100%;
+                    width: 100%;
+                    flex-direction: column;
+                   
+                    flex-wrap: nowrap;
+                    // margin-top: 1.5rem;
                 }
             }
         }
@@ -99,6 +144,12 @@
                 margin-bottom: 1rem;
             }
 
+            @include respond(phone) {
+                margin-bottom: 0;
+                height: auto;
+                
+            }
+
             &--type {
                 display: flex;
 
@@ -116,6 +167,10 @@
 
                 &--element {
                     margin-left: 3rem;
+
+                    @include respond(phone){
+                        margin: 1rem;
+                    }
                 }
             }
         }
@@ -169,7 +224,7 @@
             &--otherinfo {
                 margin: 3rem;
                 margin-bottom: 4rem;
-            
+
             }
         }
     }

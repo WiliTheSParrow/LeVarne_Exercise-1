@@ -49,7 +49,11 @@
 
                 @include respond(tab-land) {
                     align-self: flex-start;
-                    ;
+
+                }
+
+                @include respond(phone) {
+                    margin-bottom: 1.5rem;
                 }
             }
 
@@ -71,6 +75,12 @@
 
                     @include respond(tab-land) {
                         position: absolute;
+                    }
+
+                    @include respond(phone) {
+                        position: relative;
+                        width: 100%;
+                        margin-right: 0;
                     }
 
                     &:focus {
@@ -119,6 +129,10 @@
                 &:focus {
                     outline: none;
                 }
+
+                @include respond(phone) {
+                    margin-top: 1.5rem;
+                }
             }
         }
 
@@ -131,6 +145,10 @@
             &--type {
                 p {
                     font-weight: bold;
+
+                    @include respond(phone) {
+                        display: none;
+                    }
                 }
             }
 
@@ -234,7 +252,7 @@
                     th,
                     td {
                         border-collapse: collapse;
-                        // border: 1.5px solid blue;
+
                     }
 
                     th,
@@ -345,7 +363,12 @@
         @include respond(tab-land) {
             margin-left: 1rem;
             z-index: 2;
+        }
 
+        @include respond(phone) {
+            position: absolute;
+            margin-left: -85%;
+            margin-top: 1rem;
         }
     }
 
@@ -357,6 +380,12 @@
 
         @include respond(tab-land) {
             margin-right: -86%;
+        }
+
+        @include respond(phone) {
+            position: absolute;
+            margin-right: 30%;
+            margin-top: 6rem;
         }
     }
 }
