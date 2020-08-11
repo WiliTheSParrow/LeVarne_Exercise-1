@@ -2,7 +2,7 @@
         "first_name": "Aneesa",
         "second_name": "Braun",
         "email_address": "aneesa_braun@gmail.com",
-        "phone_number": "06123456789",
+        "phone_number": "06111111111",
         "rol_type": "X",
         "relatie_type": ["TIG", "members"],
         "order": [{
@@ -21,7 +21,7 @@
         "first_name": "Brenda",
         "second_name": "Peralta",
         "email_address": "brenda_peralta@gmail.com",
-        "phone_number": "06123456799",
+        "phone_number": "06222222222",
         "rol_type": "Y",
         "relatie_type": ["TIG", "leveranciers"],
         "order": [{
@@ -64,7 +64,7 @@
         "first_name": "Eli",
         "second_name": "Brady",
         "email_address": "eli_brady@gmail.com",
-        "phone_number": "06123456789",
+        "phone_number": "06333333333",
         "rol_type": "Y",
         "relatie_type": ["TIG", "sponsor"],
         "order": [{
@@ -83,7 +83,7 @@
         "first_name": "Blanche",
         "second_name": "Walter",
         "email_address": "blanche_walter@gmail.com",
-        "phone_number": "06123456789",
+        "phone_number": "06444444444",
         "rol_type": "Z",
         "relatie_type": ["TIG", "members", "sponsor"],
         "order": []
@@ -92,7 +92,7 @@
         "first_name": "Axel",
         "second_name": "Peterson",
         "email_address": "axel_peterson@gmail.com",
-        "phone_number": "06123456789",
+        "phone_number": "06555555555",
         "rol_type": "Z",
         "relatie_type":["TIG", "sponsor", "partner"],
         "order": []
@@ -101,7 +101,7 @@
         "first_name": "Kimberly",
         "second_name": "Downes",
         "email_address": "kimberly_downes@gmail.com",
-        "phone_number": "06123456789",
+        "phone_number": "06666666666",
         "rol_type": "Z",
         "relatie_type":["TIG"],
         "order": []
