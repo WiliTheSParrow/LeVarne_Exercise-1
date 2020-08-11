@@ -186,6 +186,11 @@
             height: max-content;
             padding-top: 6rem;
 
+            @include respond(phone){
+                padding-top: 1rem;
+                border: 1.5px solid $color-grey-medium-1;
+            }
+
             &--table {
                 width: 100%;
             }

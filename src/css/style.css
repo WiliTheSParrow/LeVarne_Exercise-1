@@ -738,6 +738,13 @@ body {
   padding-top: 6rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .content__dataview-relaties {
+    padding-top: 1rem;
+    border: 1.5px solid #e8e8e8;
+  }
+}
+
 .content__dataview-relaties--table {
   width: 100%;
 }
