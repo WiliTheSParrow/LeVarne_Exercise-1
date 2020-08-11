@@ -8,7 +8,6 @@ var app = new Vue({
         inputSearch: "",
         activeProfile: '',
         currentTableOrder: 'mixed'
-
     },
 
     created: function () {
@@ -102,7 +101,6 @@ var app = new Vue({
                         } else {
                             return 1;
                         }
-
                     } else {
                         orderToUse = 'descending';
                         if (a[category] < b[category]) {

@@ -27,6 +27,12 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 70%;
+  }
+}
+
 body {
   background: #e4e4e4;
   color: #010101;
@@ -378,12 +384,8 @@ body {
 .icon__plus {
   position: relative;
   margin-right: -3rem;
-  /* width: 1.5rem;
-        height: 1.5rem; */
   color: #ffffff;
   font-size: 1.3rem;
-  /* stroke: $color-white;
-        stroke-width: 1; */
 }
 
 @media only screen and (max-width: 75em) {
@@ -619,7 +621,7 @@ body {
 .content__dataview-details {
   border: 1.5px solid #e8e8e8;
   width: 100%;
-  min-height: 40vw;
+  min-height: 55vh;
 }
 
 .content__dataview-details--header {
