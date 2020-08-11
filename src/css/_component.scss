@@ -50,7 +50,8 @@
                 align-self: center;
 
                 @include respond(tab-land) {
-                    align-self: flex-start;;
+                    align-self: flex-start;
+                    ;
                 }
 
             }
@@ -59,7 +60,7 @@
                 @include respond(tab-land) {
                     margin-bottom: 1rem;
                 }
-                
+
                 input {
                     font-family: inherit;
                     color: inherit;
@@ -304,10 +305,14 @@
 
                     .statusprocess {
                         display: none;
-                        width: 1rem;
-                        height: 1rem;
-                        margin-right: .5rem;
-                        fill: $color-black;
+
+                        &--pending {
+                            display: inline-block;
+                            width: 1rem;
+                            height: 1rem;
+                            margin-right: .5rem;
+                            fill: $color-black;
+                        }
                     }
                 }
             }
@@ -343,7 +348,7 @@
         @include respond(tab-land) {
             margin-left: 1rem;
             z-index: 2;
-            
+
         }
     }
 

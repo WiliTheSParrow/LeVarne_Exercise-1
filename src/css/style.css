@@ -335,6 +335,10 @@ body {
 
 .content__dataview-details--processes--table .statusprocess {
   display: none;
+}
+
+.content__dataview-details--processes--table .statusprocess--pending {
+  display: inline-block;
   width: 1rem;
   height: 1rem;
   margin-right: .5rem;
