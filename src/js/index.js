@@ -5,7 +5,8 @@ var app = new Vue({
         filteredRelationships: [],
         relatieType: [],
         activeFilter: 'Alle relaties',
-        inputSearch: ""
+        inputSearch: "",
+        activeProfile:''
 
     },
 
@@ -74,6 +75,11 @@ var app = new Vue({
             this.activeFilter == 'Alle relaties' ? this.getAllRelationships() : this.fillFilteredRelations(filter);
         },
 
+        // Sets the activeProfile.
+        setActiveProfile: function(member){
+            this.activeProfile = member;
+        },
+
         // Fills the filteredRelationships array with the active relation members.
         fillFilteredRelations: function (relation) {
             this.allRelationships.map(el => {
@@ -84,6 +90,9 @@ var app = new Vue({
                 })
             });
         }
+
+       
+
     }
 
 
