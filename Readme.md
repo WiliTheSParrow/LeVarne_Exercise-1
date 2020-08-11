@@ -1,6 +1,6 @@
 # LeVarne Exercise 1
 
-> Front-end developer exercise for <a href="https://levarne.nl/">LeVarne</a>.
+> Front-end developer exercise for <a href="https://levarne.nl/">LeVarne</a> .
 
 ## Technologies
 * CSS (SASS)
