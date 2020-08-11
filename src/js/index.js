@@ -16,18 +16,6 @@ var app = new Vue({
         this.getLocalData('./data.json', 'allRelationships');
     },
 
-    computed: {
-        setInputFilter: function () {
-            this.filteredRelationships = this.allRelationships.filter((allrelations) => {
-                return allrelations.first_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
-                    allrelations.second_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
-                    allrelations.email_address.toLowerCase().match(this.inputSearch.toLowerCase()) ||
-                    allrelations.phone_number.toLowerCase().match(this.inputSearch.toLowerCase());
-            });
-            return this.filteredRelationships;
-        }
-    },
-
     methods: {
         // Fetching data from local json file and error handling.
         getLocalData: function (link, destination) {
@@ -93,6 +81,7 @@ var app = new Vue({
             });
         },
 
+        // Formats the phone number string from JSON file
         formatPhoneNumber: function (phoneNumberString) {
             var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
             var match = cleaned.match(/^(\d{2})(\d{3})(\d{3})(\d{3})$/)
@@ -108,6 +97,7 @@ var app = new Vue({
 
          } */
 
+        // Table asc./desc. sorting 
         sortDataInTable: function (category) {
             var orderToUse = '';
             this.filteredRelationships.sort(
@@ -131,9 +121,17 @@ var app = new Vue({
             );
             this.currentTableOrder = orderToUse;
         }
+    },
 
-
+    computed: {
+        setInputFilter: function () {
+            this.filteredRelationships = this.allRelationships.filter((allrelations) => {
+                return allrelations.first_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                    allrelations.second_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                    allrelations.email_address.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                    allrelations.phone_number.toLowerCase().match(this.inputSearch.toLowerCase());
+            });
+            return this.filteredRelationships;
+        }
     }
-
-
 })
