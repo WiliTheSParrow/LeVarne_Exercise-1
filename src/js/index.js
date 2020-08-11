@@ -6,7 +6,7 @@ var app = new Vue({
         relatieType: [],
         activeFilter: 'Alle relaties',
         inputSearch: "",
-        activeProfile:''
+        activeProfile: ''
 
     },
 
@@ -76,7 +76,7 @@ var app = new Vue({
         },
 
         // Sets the activeProfile.
-        setActiveProfile: function(member){
+        setActiveProfile: function (member) {
             this.activeProfile = member;
         },
 
@@ -89,9 +89,16 @@ var app = new Vue({
                     }
                 })
             });
-        }
+        },
 
-       
+        formatPhoneNumber: function (phoneNumberString) {
+            var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
+            var match = cleaned.match(/^(\d{2})(\d{3})(\d{3})(\d{3})$/)
+            if (match) {
+                return match[1] + ' ' + match[2] + ' ' + match[3] + ' ' + match[4]
+            }
+            return null
+        }
 
     }
 
