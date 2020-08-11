@@ -1,6 +1,6 @@
 # LeVarne Exercise 1
 
-> Front-end developer exercise for LeVarne
+> Front-end developer exercise for <a href="https://levarne.nl/">LeVarne</a>.
 
 ## Technologies
 * CSS (SASS)
@@ -10,14 +10,17 @@
 
 ## How to run this project
 * Download ZIP from GitHub repository.
-* Unzip folder and open it in your code editor and run it on localhost server.
+* Unzip file.
+* Open folder in your favourite code editor and run it on localhost server.
+
 OR
-* go to src folder and run cmd:
+
+* In the folder go to /src and run cmd:
 
 ```
 npm install
 ```
-* then
+* then:
 ```
 npm start
 ```
