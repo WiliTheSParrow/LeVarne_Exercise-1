@@ -15,15 +15,13 @@ var app = new Vue({
 
     computed: {
         setInputFilter: function () {
-        
-                this.filteredRelationships = this.allRelationships.filter((allrelations) => {
-                    return allrelations.first_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
-                        allrelations.second_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
-                        allrelations.email_address.toLowerCase().match(this.inputSearch.toLowerCase()) ||
-                        allrelations.phone_number.toLowerCase().match(this.inputSearch.toLowerCase());
-                });
-
-                return this.filteredRelationships;
+            this.filteredRelationships = this.allRelationships.filter((allrelations) => {
+                return allrelations.first_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                    allrelations.second_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                    allrelations.email_address.toLowerCase().match(this.inputSearch.toLowerCase()) ||
+                    allrelations.phone_number.toLowerCase().match(this.inputSearch.toLowerCase());
+            });
+            return this.filteredRelationships;
         }
     },
 
@@ -55,6 +53,7 @@ var app = new Vue({
             this.filteredRelationships = [];
         },
 
+        // Collects, sorts and pushes and sorts the relation types from JSON file to relatieType array to set up the menu bar on the UI.
         collectRelatieType: function () {
             this.allRelationships.map(el => {
                 el.relatie_type.map(elm => {
@@ -65,15 +64,17 @@ var app = new Vue({
 
             });
 
-            this.relatieType.push('Alle relaties');
+            this.relatieType.sort().push('Alle relaties');
         },
 
+        // Sets the activeFilter, calls the function which clears the filteredRelationships array, calls the necessary filtering function regarding the relation to set the filteredRelationships array.
         setActiveFilter: function (filter) {
             this.activeFilter = filter;
             this.clearFilteredRelationships();
             this.activeFilter == 'Alle relaties' ? this.getAllRelationships() : this.fillFilteredRelations(filter);
         },
 
+        // Fills the filteredRelationships array with the active relation members.
         fillFilteredRelations: function (relation) {
             this.allRelationships.map(el => {
                 el.relatie_type.map(elm => {
