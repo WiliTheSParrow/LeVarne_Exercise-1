@@ -7,7 +7,6 @@ var app = new Vue({
         activeFilter: 'Alle relaties',
         inputSearch: "",
         activeProfile: '',
-        // activePage: 'relaties',
         currentTableOrder: 'mixed'
 
     },
@@ -91,12 +90,6 @@ var app = new Vue({
             return null
         },
 
-        /*  pageActivator: function () {
-
-             this.activePage == 'relaties' ? this.activePage = 'evenementen' : this.activePage == 'relaties';
-
-         } */
-
         // Table asc./desc. sorting 
         sortDataInTable: function (category) {
             var orderToUse = '';
@@ -109,6 +102,7 @@ var app = new Vue({
                         } else {
                             return 1;
                         }
+
                     } else {
                         orderToUse = 'descending';
                         if (a[category] < b[category]) {
