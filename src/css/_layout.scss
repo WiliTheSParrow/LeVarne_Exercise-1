@@ -43,7 +43,6 @@
         &-bar {
             height: 100%;
             display: flex;
-            // flex-wrap: wrap;
             align-items: center;
 
             &-item {
@@ -122,9 +121,8 @@
                     height: 100%;
                     width: 100%;
                     flex-direction: column;
-                   
+
                     flex-wrap: nowrap;
-                    // margin-top: 1.5rem;
                 }
             }
         }
@@ -147,7 +145,7 @@
             @include respond(phone) {
                 margin-bottom: 0;
                 height: auto;
-                
+
             }
 
             &--type {
@@ -168,7 +166,7 @@
                 &--element {
                     margin-left: 3rem;
 
-                    @include respond(phone){
+                    @include respond(phone) {
                         margin: 1rem;
                     }
                 }
@@ -179,6 +177,10 @@
     &__dataview {
         display: flex;
 
+        @include respond(phone) {
+            flex-direction: column-reverse;
+        }
+
         &-relaties {
             border: 1.5px solid $color-grey-medium-1;
             border-right: none;
@@ -186,7 +188,7 @@
             height: max-content;
             padding-top: 6rem;
 
-            @include respond(phone){
+            @include respond(phone) {
                 padding-top: 1rem;
                 border: 1.5px solid $color-grey-medium-1;
             }

@@ -9,7 +9,6 @@ $breakpoint argument choices:
 - tab-port
 - tab-land
 - big-desktop
-ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 *,
@@ -726,6 +725,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .content__dataview {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .content__dataview-relaties {

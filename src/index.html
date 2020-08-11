@@ -56,9 +56,9 @@
                     <section class="content__dataview-relaties">
                         <table class="content__dataview-relaties--table">
                             <tr>
-                                <th @click="sortDataInTable('first_name')">Naam</th>
-                                <th @click="sortDataInTable('rol_type')">Rol</th>
-                                <th @click="sortDataInTable('order')">Lopende processen</th>
+                                <th v-on:click="sortDataInTable('first_name')">Naam</th>
+                                <th v-on:click="sortDataInTable('rol_type')">Rol</th>
+                                <th v-on:click="sortDataInTable('order')">Lopende processen</th>
                             </tr>
                             <tr v-on:click="setActiveProfile(member)"
                                 v-bind:class="member==activeProfile ? 'content__dataview-relaties--active':''"

@@ -42,7 +42,7 @@ var app = new Vue({
             this.filteredRelationships = [];
         },
 
-        // Collects, sorts and pushes and sorts the relation types from JSON file to relatieType array to set up the menu bar on the UI.
+        // Collects, sorts and pushes the relation types from JSON file to relatieType array to set up the menu bar on the UI.
         collectRelatieType: function () {
             this.allRelationships.map(el => {
                 el.relatie_type.map(elm => {
@@ -116,6 +116,7 @@ var app = new Vue({
     },
 
     computed: {
+        // Fills the filteredRelationships array with the data from an input field
         setInputFilter: function () {
             this.filteredRelationships = this.allRelationships.filter((allrelations) => {
                 return allrelations.first_name.toLowerCase().match(this.inputSearch.toLowerCase()) ||
