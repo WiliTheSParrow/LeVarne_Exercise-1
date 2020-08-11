@@ -10,3 +10,14 @@
 
 ## How to run this project
 * Download ZIP from GitHub repository.
+* Unzip folder and open it in your code editor and run it on localhost server.
+OR
+* go to src folder and run cmd:
+
+```
+npm install
+```
+* then
+```
+npm start
+```
