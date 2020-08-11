@@ -6,7 +6,8 @@ var app = new Vue({
         relatieType: [],
         activeFilter: 'Alle relaties',
         inputSearch: "",
-        activeProfile: ''
+        activeProfile: '',
+        activePage: true
 
     },
 
@@ -98,6 +99,10 @@ var app = new Vue({
                 return match[1] + ' ' + match[2] + ' ' + match[3] + ' ' + match[4]
             }
             return null
+        },
+
+        pageActivator: function () {
+            this.activePage ? this.activePage === false : console.log(true);
         }
 
     }

@@ -18,7 +18,7 @@
 
             <header class="header">
                 <nav class="header__menu">
-                    <ul class="header__menu-bar">
+                    <ul v-on:click="pageActivator()" class="header__menu-bar">
                         <li class="header__menu-bar-item">Evenementen</li>
                         <li class="header__menu-bar-item header__menu-bar-item--active">Relaties</li>
                     </ul>
@@ -28,7 +28,11 @@
                 </div>
             </header>
 
-            <div class="content">
+            <div class="content content--evenementen">
+                <p>This is the Evenementen page</p>
+            </div>
+
+            <div class="content content--relaties">
 
                 <div class="content__header">
                     <section class="content__header-search">
