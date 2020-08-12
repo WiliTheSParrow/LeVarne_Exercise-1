@@ -14,13 +14,13 @@
 * Open folder in your favourite code editor and run it on localhost server.
 
 OR
-
+* Make sure you have <a href="https://nodejs.org/en/">Node JS</a> on your computer.
 * In the folder go to /src and run cmd:
-
 ```
 npm install
 ```
-* then:
+
+* then: 
 ```
 npm start
 ```

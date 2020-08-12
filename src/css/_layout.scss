@@ -2,10 +2,14 @@
     background: $color-white;
     max-width: 150rem;
     margin: 1.5rem 1.5rem;
-    min-height: 50rem;
+    height: 95vh;
 
     @include respond(tab-port) {
         margin: 0;
+    }
+
+    @include respond(phone){
+       height: min-content;
     }
 }
 
@@ -80,12 +84,14 @@
 
 .content {
     margin: 0 10rem;
+    height: 100%;
 
     @include respond(tab-port) {
         margin: 1.5rem;
     }
 
     &__header {
+
         @include respond(phone) {
             height: min-content;
         }
@@ -176,9 +182,11 @@
 
     &__dataview {
         display: flex;
+        height: 60vh;
 
         @include respond(phone) {
             flex-direction: column-reverse;
+            height: 100%;
         }
 
         &-relaties {
@@ -201,7 +209,7 @@
         &-details {
             border: 1.5px solid $color-grey-medium-1;
             width: 100%;
-            min-height: 55vh;
+            height: 101%;
 
             &--header {
                 height: 8rem;

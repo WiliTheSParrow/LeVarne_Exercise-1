@@ -291,6 +291,10 @@
                     td {
                         text-align: left;
 
+                        &:first-child {
+                            width: 20%;
+                        }
+
                         &:last-child {
                             text-align: right;
                         }
